@@ -1,0 +1,70 @@
+/*{
+    border: 2px solid red;
+}
+*/
+body {
+    display: block;
+    margin: 8px;
+    font-family: "Helvetica Neue", sans-serif;
+    overflow-y: hidden;
+}
+#calculator{
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    background-color: light white;
+}
+.container{
+    background-color: black;
+    border: 10px solid rgba(47,47,47,1);
+    border-radius: 4px;
+    display: grid;
+    grid-template-columns: repeat(4, 100px); 
+    grid-template-rows: minmax(100px, 130px) repeat(5, 80px);
+    gap: 2px;
+    border-radius: 25px;
+    padding: 10px;
+}
+#display {
+    grid-column: 1 / -1;
+    background-color: #b2b9b7;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-end;
+    padding: 5px;
+    font-size: 5em;
+    font-weight: initial;
+    margin: 5px;
+}
+.previous{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.button{
+background: #333;
+font-size: 30px;
+color: white;
+font-weight: bolder;
+}
+.button.function{
+    background-color: #a5a5a5;
+    color: black;
+}
+.button.op{
+    background: #f1a33c;
+    font-size: 40px;
+}
+.button.number-0{
+    grid-column: 1 / span 2;
+}
+.button.function.clear{
+    grid-column: 1 / span 2;
+}
+.button.op.subtract{
+    font-size: 60px;
+}
